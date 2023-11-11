@@ -1,0 +1,28 @@
+<div class="container">
+  {% for job in jobs %}
+    <div class="row mb-5">
+        <div class="col-9 ">
+          <h4>{{job['title']}}</h4>
+          <p>Location: {{job['location']}}</p>
+          <p>Salary: {{job['salary']}}</p>
+        </div>
+  
+        <div class="col-1 my-auto">
+          <button class="btn btn-primary">Apply</button>
+      </div>
+    </div>
+  {% endfor %}  
+  
+<div>
+
+<!-- <div class="container">
+  <div class="row mb-5">
+    <div class="col-md-6">Content in column 1</div>
+    <div class="col-md-6">Content in column 2</div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-md-6">Content in column 3</div>
+    <div class="col-md-6">Content in column 4</div>
+  </div>
+</div> -->
